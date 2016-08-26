@@ -1,0 +1,1552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--<base href="http://www.forosdelweb.com/">--><base href="."><!--[if IE]></base><![endif]-->
+	<link rel="canonical" href="./fpdf con php y mysql - Foros del Web_files/fpdf con php y mysql - Foros del Web.htm">
+
+<meta name="generator" content="vBulletin 3.8.6">
+
+<meta name="keywords" content="fpdf,con,php,mysql,fpdf, mysql, php,  fpdf con php y mysql, comunidad, aprender, php, .net, diseño, javascript, html, seo, programación, software, socialmedia, móviles, diseño, 3d, audio, vídeo, desarrolloweb">
+<meta name="description" content="Hola a todos los del foro, soy nueva por aqui y tengo problemas para generar mi archivo PDF usando mysql. Cómo se hace para mostrar todos los registros de una">
+
+
+<meta property="og:title" content="Foros del Web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.forosdelweb.com/">
+    <meta property="og:image" content="http://www.forosdelweb.com/w/skins/common/images/wiki.png">
+    <meta property="fb:page_id" content="135614054955">
+
+<!-- CSS Stylesheet -->
+<link rel="stylesheet" type="text/css" href="./fpdf con php y mysql - Foros del Web_files/headmenu.css">
+<link rel="stylesheet" type="text/css" href="./fpdf con php y mysql - Foros del Web_files/shared.css">
+
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.6 CSS
+* Style: 'Fdw 2011'; Style ID: 11
+*/
+@import url("clientscript/vbulletin_css/style-f24ff032-00011.css");
+</style>
+<link rel="stylesheet" type="text/css" href="./fpdf con php y mysql - Foros del Web_files/vbulletin_important.css">
+
+
+<link rel="shortcut icon" href="http://static.forosdelweb.com/favicon.ico">
+<!-- / CSS Stylesheet -->
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/connection-min.js"></script>
+
+<script type="text/javascript">
+<!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "http://static.forosdelweb.com/images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_global.js"></script>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_menu.js"></script>
+	<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/fdw_menu.js"></script>
+	<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/fdw_header.js"></script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Foros del Web RSS Feed" href="http://www.forosdelweb.com/external.php?type=RSS2">
+	
+		<link rel="alternate" type="application/rss+xml" title="Foros del Web - PHP - RSS Feed" href="http://www.forosdelweb.com/external.php?type=RSS2&forumids=18">
+	
+
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/google_service.js"></script>
+<script type="text/javascript">try{GS_googleAddAdSenseService("ca-pub-0070781738361811");GS_googleEnableAllServices();}catch(err){}</script><script src="./fpdf con php y mysql - Foros del Web_files/google_ads.js"></script>
+<script language="JavaScript">try{
+GA_googleAddAttr("usergroup", "1");GA_googleAddAttr("script", "showthread");
+GA_googleAddAttr("Forum", "_PHP"); 
+}catch(err){}
+</script> 
+<script type="text/javascript">try{GA_googleAddSlot("ca-pub-0070781738361811","FDW_Adsense_mensajes_300x250");
+GA_googleAddSlot("ca-pub-0070781738361811","FDW_Leaderboard_general_728x90");
+GA_googleAddSlot("ca-pub-0070781738361811","FDW_Sidebar_125");
+GA_googleAddSlot("ca-pub-0070781738361811", "FDW_Sidebar_125b");GA_googleAddSlot("ca-pub-0070781738361811","FDW_Sidebar_125c");GA_googleAddSlot("ca-pub-0070781738361811","FDW_Survey");}catch(err){}</script>
+<script type="text/javascript">try{GA_googleFetchAds();}catch(err){}</script>
+<script type="text/javascript">window.google_analytics_uacct="UA-309831-5";</script>
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.forosdelweb.com/util/fdwSearchEnginePlugin.xml" title="Buscar en Foros del Web"><script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_quickreport.js"></script>
+
+<style type="text/css">
+/* ***** red and green boxes for username verification used during registration ***** */
+.headmenu div.greenbox { border: 1px solid #337733; background: #bbffbb; color: #337733; padding: 3px; }
+.headmenu div.redbox { border:1px solid #773333; background: #ffbbbb; color: #773333; padding: 3px; }
+</style>
+
+
+	<title> fpdf con php y mysql - Foros del Web</title>
+	<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_post_loader.js"></script>
+	<style type="text/css" id="vbulletin_showthread_css">
+	<!--
+	
+	#tag_edit_list { list-style:none; margin:0px; padding:0px; }
+	#tag_edit_list li { float:left; display:block; width:200px; }
+	#tag_edit_list li.mine { font-weight:bold; }
+	
+	#links div { white-space: nowrap; }
+	#links img { vertical-align: middle; }
+	-->
+	</style>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/XFBML"></script><script src="./fpdf con php y mysql - Foros del Web_files/ga.js" async="true"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js"><link rel="stylesheet" type="text/css" href="./fpdf con php y mysql - Foros del Web_files/connect-css"></head>
+<body onload="">
+<a name="top"></a>
+
+<div id="content_head"><!-- CONTENT HEAD -->
+	<div id="head"><!-- HEAD -->
+		<div id="select_web">
+			<h1><a id="logo" href="http://www.forosdelweb.com/" class="foros_del_web">Foros del web, comunidad de entusiastas web</a></h1>
+
+		</div>
+	
+	<div id="search_head"><!-- SEARCH HEAD -->
+		<form action="http://www.forosdelweb.com/search.php">
+			<input type="hidden" name="cx" value="003443319247910514836:k3yjoy5uums">
+			<input type="hidden" name="cof" value="FORID:10">
+			<input type="hidden" name="ie" value="ISO 8859-1">
+			<input type="text" class="search" name="q" id="s">
+			<input type="submit" class="search_button" value="" name="sa" id="sm">
+		</form>
+	</div><!-- /SEARCH HEAD -->
+	
+	<ul id="nav"><!-- NAV -->
+		
+		<li><a href="http://www.forosdelweb.com/wiki" class="menulink" id="learn">Aprende</a></li>
+		<li><a href="http://www.forosdelweb.com/register.php" id="register" class="menulink">Registrarse</a></li>
+	</ul><!-- /NAV -->
+	
+	<div id="user_head"><!-- USER HEAD -->
+		
+			<img src="./fpdf con php y mysql - Foros del Web_files/unknown.gif" alt="avatar" title="avatar">
+			<p><a href="http://www.forosdelweb.com/usercp.php" class="user_select" id="loginform">Iniciar Sesión</a></p>
+		
+	</div><!-- /USER HEAD -->
+	
+</div><!-- /HEAD -->
+
+</div><!-- /CONTENT HEAD -->
+<div id="head_spacer" style="display: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 40px; "></div><script type="text/javascript">fdwHeader.init();</script>
+
+
+<div id="logo_menu" class="headmenu" style="position: absolute; ">
+	<ul>
+		<li><a href="http://www.forosdelweb.com/">Portada Foros del Web</a></li>
+		<li><a href="http://www.maestrosdelweb.com/">Maestros del Web</a></li>
+		<li><a href="http://twitter.com/forosdelweb">Foros del Web en Twitter</a></li>
+		<li><a href="http://facebook.com/forosdelweb">Foros del Web en Facebook</a></li>
+	</ul>
+</div>
+<script type="text/javascript">fdwMenus.register("logo", false, false, true);</script>
+
+
+<div id="loginform_menu" class="headmenu" style="position: absolute; "></div>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/fdw_ajax_eval.js"></script>
+<script type="text/javascript">fdwMenus.register("loginform", true, false, false, {url:"misc.php?do=login",tagname:"login"});</script>
+
+<div id="learn_menu" class="headmenu" style="position: absolute; ">
+	<ul>
+		<li><a href="http://www.forosdelweb.com/wiki/Categor%C3%ADa:Manuales" title="Manuales de PHP, Javascript, etc.">Manuales y tutoriales</a></li>
+		<li><a href="http://www.forosdelweb.com/wiki/" title="Wiki">Wiki del foro</a></li>
+		<li><a href="http://www.forosdelweb.com/wiki/Categor%C3%ADa:Glosario" title="Glosario Wiki">Glosario</a></li>
+		<li><a href="http://www.forosdelweb.com/wiki/Faqs" title="Preguntas frecuentes">FAQ</a></li>
+		<li><a href="http://www.forosdelweb.com/faq.php" title="Preguntas y ayuda a usuarios">Ayuda</a></li>
+	</ul>
+</div>
+<script type="text/javascript">fdwMenus.register("learn", true);</script>
+
+<br>
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+
+<form action="http://www.forosdelweb.com/profile.php?do=dismissnotice" method="post" id="notices">
+<input type="hidden" name="do" value="dismissnotice">
+<input type="hidden" name="securitytoken" value="guest">
+<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="">
+<input type="hidden" name="url" value="/showthread.php?t=877013">
+	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+	<tbody><tr>
+		<td class="thead">Avisos</td>
+	</tr>
+	<tr>
+		<td class="alt1">
+			<div class="navbar_notice" id="navbar_notice_4">
+	Visita el <a rel="nofollow" href="http://www.forosdelweb.com/wiki/Manual_de_PHP?utm_source=FDW&utm_medium=Avisos&utm_content=No-Registrados&utm_campaign=Wiki-fdw"><strong>Manual de PHP</strong></a>
+</div><div class="navbar_notice" id="navbar_notice_5">
+	Aprende de <a rel="nofollow" href="http://www.forosdelweb.com/wiki/PHP?utm_source=FDW&utm_medium=Avisos&utm_content=No-Registrados&utm_campaign=Wiki-fdw#Interacci.C3.B3n_con_Bases_de_Datos"><strong>PHP y el manejo de Bases de Datos</strong></a>
+</div>
+		</td>
+	</tr>
+	</tbody></table>
+	<br>
+</form>
+
+
+
+
+
+<!-- PAGENAV POPUP -->
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tbody><tr>
+			<td class="thead" nowrap="nowrap">Ir a la Página...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="http://www.forosdelweb.com/" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4">
+				<input type="button" class="button" id="pagenav_ibtn" value="Ir">
+			</form>
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+<!-- / PAGENAV POPUP -->
+
+
+<!-- breadcrumb, login, pm info -->
+<table cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tbody><tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr valign="bottom">
+				<td><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#" onclick="history.back(1);return false;" title="Retroceder" id="navbits_start"></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="http://www.forosdelweb.com/" accesskey="1">Foros del Web</a></span> 
+	<span class="navbar">» <a href="http://www.forosdelweb.com/f39/">Programación para sitios web</a></span>
+
+
+	<span class="navbar">» <a href="http://www.forosdelweb.com/f18/">PHP</a></span>
+
+</td>
+			</tr>
+			<tr>
+				<td class="navbar" colspan="3"><a href="./fpdf con php y mysql - Foros del Web_files/fpdf con php y mysql - Foros del Web.htm" id="navbits_finallink_ltr" title="Actualizar esta página"></a> <strong>
+	 fpdf con php y mysql
+
+</strong></td>
+			</tr>
+			</tbody></table>
+		
+	</td>
+<!--/* Zona Botón NavBar */-->
+
+</tr>
+</tbody></table>
+<!-- / breadcrumb, login, pm info -->
+
+
+
+<div style="padding:0 0 10px;" align="center">
+<script type="text/javascript">try{GA_googleFillSlot("FDW_Leaderboard_general_728x90");}catch(err){}</script><script src="./fpdf con php y mysql - Foros del Web_files/ads"></script><div id="google_ads_div_FDW_Leaderboard_general_728x90"><script type="text/javascript"><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://91.142.213.7/www/delivery/ajs.php':'http://91.142.213.7/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=22");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/ajs.php"></script><a href="http://91.142.213.7/www/delivery/ck.php?oaparams=2__bannerid=107__zoneid=22__cb=3087c86a24__oadest=http://www.singularweb.com/vps_linux/vps-linux-economico.php?HSPC_MM=1bb392d021" target="_blank"><img src="./fpdf con php y mysql - Foros del Web_files/box-728x90-02.jpg" width="728" height="90" alt="" title="" border="0"></a><div id="beacon_3087c86a24" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./fpdf con php y mysql - Foros del Web_files/lg.php" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div>
+<noscript>&lt;a href='http://91.142.213.7/www/delivery/ck.php?n=aa81e835&amp;amp;cb=12345&amp;http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBdu7UV7V2TcnHB4uc6Qb92PiHCenRy_cBAAAAEAEg6YX4ATgAWPH1r-MWYKv55IG4BrIBE3d3dy5mb3Jvc2RlbHdlYi5jb226AQk3Mjh4OTBfYXPIAQnaATlodHRwOi8vd3d3LmZvcm9zZGVsd2ViLmNvbS9mMTgvZnBkZi1jb24tcGhwLW15c3FsLTg3NzAxMy-YAugHwAIC4AIA6gIeRkRXX0xlYWRlcmJvYXJkX2dlbmVyYWxfNzI4eDkw-ALw0R6QA4wGmAPoAqgDAeAEAQ%26num%3D0%26sig%3DAGiWqtwdspArjCYLyFjKNuVfirDCYbolyw%26client%3Dca-pub-0070781738361811%26adurl%3D' target='_blank'&gt;&lt;img src='http://91.142.213.7/www/delivery/avw.php?zoneid=22&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=aa81e835' border='0' alt='' /&gt;&lt;/a&gt;</noscript>
+
+</div>
+
+</div>
+
+
+
+ 
+
+<div id="register_menu" class="headmenu" style="width: 360px; position: absolute; "></div>
+<script type="text/javascript">
+fdwMenus.register("register", true, false, false, { url: "register.php?do=register", tagname: "register" }, true);
+</script>
+
+
+
+
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tbody><tr valign="bottom">
+	
+		<td class="smallfont"><a href="http://www.forosdelweb.com/newreply.php?do=newreply&noquote=1&p=3707425" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/reply.gif" alt="Respuesta" border="0" title="Respuesta"></a></td>
+	
+	
+</tr>
+</tbody></table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" align="center" style="border-bottom-width:0px">
+<tbody><tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+			<a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3707425"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/firstnew.gif" alt="Ver 1°  Sin Leer" border="0" title="Ver 1°  Sin Leer"></a>
+			<a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3707425"><strong>Ver 1°  Sin Leer</strong></a>
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap" style="cursor: pointer; ">
+		<a rel="nofollow" href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/?nojs=1#goto_threadtools">Herramientas</a>
+		<script type="text/javascript"> vbmenu_register("threadtools"); </script> <img src="./fpdf con php y mysql - Foros del Web_files/menu_open.gif" border="0" title="" alt="">
+	</td>
+	
+	
+	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap" style="cursor: pointer; ">
+		<a rel="nofollow" href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/?nojs=1#goto_displaymodes">Desplegado</a>
+		<script type="text/javascript"> vbmenu_register("displaymodes"); </script> <img src="./fpdf con php y mysql - Foros del Web_files/menu_open.gif" border="0" title="" alt="">
+	</td>
+	
+
+	
+
+</tr>
+</tbody></table>
+<!-- / toolbar -->
+
+
+
+<!-- end content table -->
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+
+
+
+
+<div id="posts"><!-- post #3707425 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit3707425" style="padding:0px 0px 6px 0px;">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post3707425" class="tborder group-2 post_back" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; width: 194px; border-right: 0px">
+			<!-- status icon and date -->
+			<a name="post3707425"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/post_new.gif" alt="No Leído" border="0" title="No Leído"></a>
+			15-ene-2011, 15:02
+			<a name="newpost"></a>
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.forosdelweb.com/3707425-post1.html" target="new" id="postcount3707425" name="1"><strong>1</strong></a> (<b><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3707425" title="Enlace a este post">permalink</a></b>)
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2 pbit" width="175" style="border: 1px solid #ffffff; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_3707425">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.forosdelweb.com/miembros/venezolana32/"><!-- google_ad_section_start(weight=ignore) -->venezolana32<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+
+			
+			
+			
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br>
+
+<strong>Mensajes: 11</strong>
+
+<div>Karma:  n/a </div>
+
+				
+				
+				<div>
+					
+				</div>
+				
+				
+				
+				
+<!-- controls -->
+<div style="margin-top:5px;">
+	    
+
+		<img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/user_offline.gif" alt="venezolana32 está desconectado" border="0" title="venezolana32 está desconectado">
+
+
+		
+		
+		
+		
+
+<!-- end controls -->
+</div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_3707425" style="border-right: 1px solid #ffffff">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/icon7.png" alt="Sonrisa" border="0" title="Sonrisa">
+				<strong><!-- google_ad_section_start -->fpdf con php y mysql<!-- google_ad_section_end --></strong>
+			</div>
+			<hr size="1" style="color:#ffffff; background-color:#ffffff">
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div class="post_content" id="post_message_3707425">
+
+	
+
+<div style="width:300;float:left;padding:10px;">
+<script type="text/javascript">
+GA_googleFillSlot("FDW_Adsense_mensajes_300x250");
+</script><script src="./fpdf con php y mysql - Foros del Web_files/ads(1)"></script><div id="google_ads_div_FDW_Adsense_mensajes_300x250">
+<ins style="width: 300px; height: 250px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; display: inline-table; position: relative; "><ins style="width: 300px; height: 250px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; display: block; position: relative; "><iframe id="google_ads_iframe_FDW_Adsense_mensajes_300x250" name="google_ads_iframe_FDW_Adsense_mensajes_300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; position: absolute; top: 0px; left: 0px; "></iframe></ins></ins></div>
+<script>GA_googleCreateDomIframe('google_ads_div_FDW_Adsense_mensajes_300x250' ,'FDW_Adsense_mensajes_300x250');</script></div>
+	
+			
+			<!-- google_ad_section_start -->Hola a todos los del foro, soy nueva por aqui y tengo problemas para generar mi archivo PDF usando mysql. Cómo se hace para mostrar todos los registros de una tabla en FPDF.<br>
+<br>
+Me he metido en la pagina ofical del fpdf (http://fpdf.org/) y no logro dar con la solucion. Gracias por su ayuda.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #ffffff; border-top: 0px">
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #ffffff; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.forosdelweb.com/newreply.php?do=newreply&p=3707425" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/quote.gif" alt="Responder Citando" border="0" title="Responder Citando"></a>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 3707425 popup menu -->
+
+<!-- / post 3707425 popup menu -->
+<script type="text/javascript">vbreport_register("3707425");</script>
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3707425 -->	
+<div style="padding: 0px 25px 6px;">
+<table width="100%" cellspacing="1" cellpadding="6" border="0" align="center" class="tborder">
+<tbody>
+
+<tr>
+	<td class="alt1">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0070781738361811";
+/* 728x90 Msg Fdw */
+google_ad_slot = "0974121824";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/show_ads.js">
+</script><script src="./fpdf con php y mysql - Foros del Web_files/expansion_embed.js"></script><script src="./fpdf con php y mysql - Foros del Web_files/test_domain.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><ins id="google_ads_frame3_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><iframe allowtransparency="true" frameborder="0" height="90" hspace="0" id="google_ads_frame3" marginheight="0" marginwidth="0" name="google_ads_frame" scrolling="no" src="./fpdf con php y mysql - Foros del Web_files/ads.htm" style="left:0;position:absolute;top:0" vspace="0" width="728"></iframe></ins></ins>
+	</td>
+</tr>
+</tbody></table>
+</div>
+	<!-- post #3707434 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit3707434" style="padding:0px 0px 6px 0px;">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post3707434" class="tborder group-12 post_back" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; width: 194px; border-right: 0px">
+			<!-- status icon and date -->
+			<a name="post3707434"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/post_new.gif" alt="No Leído" border="0" title="No Leído"></a>
+			15-ene-2011, 15:12
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.forosdelweb.com/3707434-post2.html" target="new" id="postcount3707434" name="2"><strong>2</strong></a> (<b><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3707434" title="Enlace a este post">permalink</a></b>)
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2 pbit" width="175" style="border: 1px solid #ffffff; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_3707434">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.forosdelweb.com/miembros/anacona16/"><!-- google_ad_section_start(weight=ignore) -->anacona16<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+
+			
+			
+			
+
+			
+				<div class="smallfont"><a rel="nofollow" href="http://www.forosdelweb.com/miembros/anacona16/"><img src="./fpdf con php y mysql - Foros del Web_files/41499_1480832666_7895_t.jpg" alt="anacona16 (Reg: marzo-2010)" border="0" title="anacona16 (Reg: marzo-2010)"></a>
+
+
+
+
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br>
+
+<strong>Mensajes: 190</strong>
+
+<div>Karma:  n/a </div>
+
+				<div>Ubicación: Bogota DC</div>
+				
+				<div>
+					
+				</div>
+				
+				
+				
+				
+<!-- controls -->
+<div style="margin-top:5px;">
+	    
+
+		<img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/user_offline.gif" alt="anacona16 está desconectado" border="0" title="anacona16 está desconectado">
+
+
+		
+		
+		
+		
+
+<!-- end controls -->
+</div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_3707434" style="border-right: 1px solid #ffffff">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong><!-- google_ad_section_start -->Respuesta: fpdf con php y mysql<!-- google_ad_section_end --></strong>
+			</div>
+			<hr size="1" style="color:#ffffff; background-color:#ffffff">
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div class="post_content" id="post_message_3707434">
+
+	
+			
+			<!-- google_ad_section_start -->Las consultas se hacen normales, lo diferente es que ya no dibujas las tablas html que comunmente se hacen, ahora te toca dibujar celdas, ejemplo:<br>
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Código PHP:</div>
+	<div class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 640px;
+		height: 130px;
+		text-align: left;
+		overflow: auto">
+		<code style="white-space:nowrap">
+			<!-- php buffer start --><code><span style="color: #000000">
+<span style="color: #0000BB">$consulta&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">mysql_query</span><span style="color: #007700">(</span><span style="color: #DD0000">"SELECT&nbsp;*&nbsp;FROM&nbsp;tb_ejemplo"</span><span style="color: #007700">);<br><br>while(</span><span style="color: #0000BB">$resultado&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">mysql_fetch_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$consulta</span><span style="color: #007700">)){<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'campo1'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'campo2'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'campo3'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);<br>}&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code><!-- php buffer end -->
+		</code>
+	</div>
+</div>De esa manera dibujas celdas e imprimes los resultados de la consulta, obiamente antes debes instanciar la clase fpdf que para el ejemplo que te puse se guarda en el objeto $pdf.<br>
+<br>
+Prueba y me cuentas.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #ffffff; border-top: 0px">
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #ffffff; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.forosdelweb.com/newreply.php?do=newreply&p=3707434" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/quote.gif" alt="Responder Citando" border="0" title="Responder Citando"></a>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 3707434 popup menu -->
+
+<!-- / post 3707434 popup menu -->
+<script type="text/javascript">vbreport_register("3707434");</script>
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3707434 --><!-- post #3707454 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit3707454" style="padding:0px 0px 6px 0px;">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post3707454" class="tborder group-2 post_back" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; width: 194px; border-right: 0px">
+			<!-- status icon and date -->
+			<a name="post3707454"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/post_new.gif" alt="No Leído" border="0" title="No Leído"></a>
+			15-ene-2011, 15:36
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.forosdelweb.com/3707454-post3.html" target="new" id="postcount3707454" name="3"><strong>3</strong></a> (<b><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3707454" title="Enlace a este post">permalink</a></b>)
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2 pbit" width="175" style="border: 1px solid #ffffff; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_3707454">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.forosdelweb.com/miembros/venezolana32/"><!-- google_ad_section_start(weight=ignore) -->venezolana32<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+
+			
+			
+			
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br>
+
+<strong>Mensajes: 11</strong>
+
+<div>Karma:  n/a </div>
+
+				
+				
+				<div>
+					
+				</div>
+				
+				
+				
+				
+<!-- controls -->
+<div style="margin-top:5px;">
+	    
+
+		<img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/user_offline.gif" alt="venezolana32 está desconectado" border="0" title="venezolana32 está desconectado">
+
+
+		
+		
+		
+		
+
+<!-- end controls -->
+</div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_3707454" style="border-right: 1px solid #ffffff">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong><!-- google_ad_section_start -->Respuesta: fpdf con php y mysql<!-- google_ad_section_end --></strong>
+			</div>
+			<hr size="1" style="color:#ffffff; background-color:#ffffff">
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div class="post_content" id="post_message_3707454">
+
+	
+			
+			<!-- google_ad_section_start -->hola anacona16, gracias por tu aporte me ayudo mucho , lo hice pero me muestra solo el primer registro y me muestra 4 columnas de la tabla y necesito que me muestre 5 . <br>
+Aqui te dejo el código para que veas como lo hice. <br>
+<style type="text/css">@import url("http://static.forosdelweb.com/clientscript/vbulletin_css/geshi.css");</style>
+<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/geshi.js"></script>
+<div class="geshibox">
+Código PHP:
+<pre class="alt2" style="height:516px;"><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#" onclick="veroriginal(this);return false;" class="tool" title="Ver código original en un popup">Ver original</a><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#" onclick="copiar(this);return false;" class="tool" title="Copiar código al porta papeles">Copiar</a><div dir="ltr" style="text-align:left;"><div class="php php" style="font-family:monospace;"><ol><li class="li1"><div class="de1"><span class="kw2">&lt;?</span></div></li><li class="li2"><div class="de2"><span class="kw1">require</span><span class="br0">(</span><span class="st_h">'fpdf.php'</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="kw2">class</span> PDF <span class="kw2">extends</span> FPDF</div></li><li class="li2"><div class="de2"><span class="br0">{</span></div></li><li class="li1"><div class="de1"><span class="co1">//Pie de página</span></div></li><li class="li2"><div class="de2"><span class="kw2">function</span> Footer<span class="br0">(</span><span class="br0">)</span></div></li><li class="li1"><div class="de1"><span class="br0">{</span></div></li><li class="li2"><div class="de2"><span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">SetY</span><span class="br0">(</span><span class="sy0">-</span><span class="nu0">10</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">SetFont</span><span class="br0">(</span><span class="st_h">'Arial'</span><span class="sy0">,</span><span class="st_h">'I'</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span>;</div></li><li class="li2"><div class="de2"><span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">Cell</span><span class="br0">(</span><span class="nu19">0</span><span class="sy0">,</span><span class="nu0">10</span><span class="sy0">,</span><span class="st_h">'Page '</span><span class="sy0">.</span><span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">PageNo</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">.</span><span class="st_h">'/{nb}'</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="st_h">'C'</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="br0">}</span></div></li><li class="li2"><div class="de2"><span class="br0">}</span></div></li><li class="li1"><div class="de1"><span class="co1">//Creación del objeto de la clase heredada</span></div></li><li class="li2"><div class="de2"><span class="re0">$pdf</span><span class="sy0">=</span><span class="kw2">new</span> PDF<span class="br0">(</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">AddPage</span><span class="br0">(</span><span class="br0">)</span>;</div></li><li class="li2"><div class="de2"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">SetFont</span><span class="br0">(</span><span class="st_h">'Times'</span><span class="sy0">,</span><span class="st_h">''</span><span class="sy0">,</span><span class="nu0">12</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="co1">//Aquí escribimos lo que deseamos mostrar</span></div></li><li class="li2"><div class="de2"><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">(</span><span class="st0">"localhost"</span><span class="sy0">,</span><span class="st0">"root"</span><span class="sy0">,</span><span class="st0">"123"</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">(</span><span class="st0">"sicatsene"</span><span class="br0">)</span>;</div></li><li class="li2"><div class="de2"><span class="re0">$consulta</span> <span class="sy0">=</span> <a href="http://www.php.net/mysql_query"><span class="kw3">mysql_query</span></a><span class="br0">(</span><span class="st0">"SELECT * FROM usuario"</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="kw1">while</span><span class="br0">(</span><span class="re0">$resultado</span> <span class="sy0">=</span> <a href="http://www.php.net/mysql_fetch_array"><span class="kw3">mysql_fetch_array</span></a><span class="br0">(</span><span class="re0">$consulta</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span></div></li><li class="li2"><div class="de2"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">Cell</span><span class="br0">(</span><span class="nu0">50</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="re0">$resultado</span><span class="br0">[</span><span class="st_h">'ci'</span><span class="br0">]</span><span class="sy0">,</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="st_h">'C'</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">Cell</span><span class="br0">(</span><span class="nu0">50</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="re0">$resultado</span><span class="br0">[</span><span class="st_h">'nombres'</span><span class="br0">]</span><span class="sy0">,</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="st_h">'C'</span><span class="br0">)</span>;</div></li><li class="li2"><div class="de2"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">Cell</span><span class="br0">(</span><span class="nu0">50</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="re0">$resultado</span><span class="br0">[</span><span class="st_h">'telf_movil'</span><span class="br0">]</span><span class="sy0">,</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="st_h">'C'</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">Cell</span><span class="br0">(</span><span class="nu0">50</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="re0">$resultado</span><span class="br0">[</span><span class="st_h">'email'</span><span class="br0">]</span><span class="sy0">,</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="st_h">'C'</span><span class="br0">)</span>;</div></li><li class="li2"><div class="de2"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">Cell</span><span class="br0">(</span><span class="nu0">50</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="re0">$resultado</span><span class="br0">[</span><span class="st_h">'direccion'</span><span class="br0">]</span><span class="sy0">,</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu19">0</span><span class="sy0">,</span><span class="st_h">'C'</span><span class="br0">)</span>;</div></li><li class="li1"><div class="de1"><span class="br0">}</span> &nbsp;</div></li><li class="li2"><div class="de2">&nbsp;</div></li><li class="li1"><div class="de1"><span class="re0">$pdf</span><span class="sy0">-&gt;</span><span class="me1">Output</span><span class="br0">(</span><span class="br0">)</span>;</div></li><li class="li2"><div class="de2">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw2">?&gt;</span></div></li></ol></div></div></pre>
+</div><!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+		<!-- edit note -->
+			<div class="smallfont">
+				<hr size="1" style="color:#ffffff; background-color:#ffffff">
+				<em>
+					
+						Última edición por venezolana32; 15-ene-2011 a las <span class="time">15:58</span>
+					
+					
+				</em>
+			</div>
+		<!-- / edit note -->
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #ffffff; border-top: 0px">
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #ffffff; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.forosdelweb.com/newreply.php?do=newreply&p=3707454" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/quote.gif" alt="Responder Citando" border="0" title="Responder Citando"></a>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 3707454 popup menu -->
+
+<!-- / post 3707454 popup menu -->
+<script type="text/javascript">vbreport_register("3707454");</script>
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3707454 --><!-- post #3707637 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit3707637" style="padding:0px 0px 6px 0px;">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post3707637" class="tborder group-12 post_back" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; width: 194px; border-right: 0px">
+			<!-- status icon and date -->
+			<a name="post3707637"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/post_new.gif" alt="No Leído" border="0" title="No Leído"></a>
+			15-ene-2011, 19:53
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.forosdelweb.com/3707637-post4.html" target="new" id="postcount3707637" name="4"><strong>4</strong></a> (<b><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3707637" title="Enlace a este post">permalink</a></b>)
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2 pbit" width="175" style="border: 1px solid #ffffff; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_3707637">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.forosdelweb.com/miembros/anacona16/"><!-- google_ad_section_start(weight=ignore) -->anacona16<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+
+			
+			
+			
+
+			
+				<div class="smallfont"><a rel="nofollow" href="http://www.forosdelweb.com/miembros/anacona16/"><img src="./fpdf con php y mysql - Foros del Web_files/41499_1480832666_7895_t.jpg" alt="anacona16 (Reg: marzo-2010)" border="0" title="anacona16 (Reg: marzo-2010)"></a>
+
+
+
+
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br>
+
+<strong>Mensajes: 190</strong>
+
+<div>Karma:  n/a </div>
+
+				<div>Ubicación: Bogota DC</div>
+				
+				<div>
+					
+				</div>
+				
+				
+				
+				
+<!-- controls -->
+<div style="margin-top:5px;">
+	    
+
+		<img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/user_offline.gif" alt="anacona16 está desconectado" border="0" title="anacona16 está desconectado">
+
+
+		
+		
+		
+		
+
+<!-- end controls -->
+</div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_3707637" style="border-right: 1px solid #ffffff">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong><!-- google_ad_section_start -->Respuesta: fpdf con php y mysql<!-- google_ad_section_end --></strong>
+			</div>
+			<hr size="1" style="color:#ffffff; background-color:#ffffff">
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div class="post_content" id="post_message_3707637">
+
+	
+			
+			<!-- google_ad_section_start -->Me alegro que te haya servido, respondo a tus preguntas:<br>
+<br>
+1. Primer registro: Tienes que llamar un nueva linea, es como si se imprimiera una nueva fila, solo agrega <font color="Red">$pdf-&gt;Ln();</font> antes de terminar el while, te quedaria de esta manera:<br>
+<br>
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Código PHP:</div>
+	<div class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 640px;
+		height: 146px;
+		text-align: left;
+		overflow: auto">
+		<code style="white-space:nowrap">
+			<!-- php buffer start --><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">while(</span><span style="color: #0000BB">$resultado&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">mysql_fetch_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$consulta</span><span style="color: #007700">)){
+<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'ci'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);
+<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'nombres'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);
+<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'telf_movil'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);
+<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'email'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);
+<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Cell</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">,</span><span style="color: #0000BB">5</span><span style="color: #007700">,</span><span style="color: #0000BB">$resultado</span><span style="color: #007700">[</span><span style="color: #DD0000">'direccion'</span><span style="color: #007700">],</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'C'</span><span style="color: #007700">);
+<br></span><span style="color: #0000BB">$pdf</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Ln</span><span style="color: #007700">();
+<br>}&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code><!-- php buffer end -->
+		</code>
+	</div>
+</div>2: 4 Columnas: El primer parametro que recibe la funcion Cell es el ancho de la celda, si sumas todos los anchos pues no te van a caber en el PDF, te toca que le mermes el ancho.<br>
+<br>
+Intenta y me cuentas.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #ffffff; border-top: 0px">
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #ffffff; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.forosdelweb.com/newreply.php?do=newreply&p=3707637" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/quote.gif" alt="Responder Citando" border="0" title="Responder Citando"></a>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 3707637 popup menu -->
+
+<!-- / post 3707637 popup menu -->
+<script type="text/javascript">vbreport_register("3707637");</script>
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3707637 --><!-- post #3712873 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit3712873" style="padding:0px 0px 6px 0px;">
+	
+
+
+
+<table id="post3712873" class="tborder group-2 post_back" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; width: 194px; border-right: 0px">
+			<!-- status icon and date -->
+			<a name="post3712873"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/post_new.gif" alt="No Leído" border="0" title="No Leído"></a>
+			19-ene-2011, 21:06
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #ffffff; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.forosdelweb.com/3712873-post5.html" target="new" id="postcount3712873" name="5"><strong>5</strong></a> (<b><a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#post3712873" title="Enlace a este post">permalink</a></b>)
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2 pbit" width="175" style="border: 1px solid #ffffff; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_3712873">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.forosdelweb.com/miembros/venezolana32/"><!-- google_ad_section_start(weight=ignore) -->venezolana32<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+
+			
+			
+			
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br>
+
+<strong>Mensajes: 11</strong>
+
+<div>Karma:  n/a </div>
+
+				
+				
+				<div>
+					
+				</div>
+				
+				
+				
+				
+<!-- controls -->
+<div style="margin-top:5px;">
+	    
+
+		<img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/user_offline.gif" alt="venezolana32 está desconectado" border="0" title="venezolana32 está desconectado">
+
+
+		
+		
+		
+		
+
+<!-- end controls -->
+</div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_3712873" style="border-right: 1px solid #ffffff">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong><!-- google_ad_section_start -->Respuesta: fpdf con php y mysql<!-- google_ad_section_end --></strong>
+			</div>
+			<hr size="1" style="color:#ffffff; background-color:#ffffff">
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div class="post_content" id="post_message_3712873">
+
+	
+			
+			<!-- google_ad_section_start -->Oye muchas gracias, ya hice mi primer reporte en FPDF y quedo muy bien <img src="./fpdf con php y mysql - Foros del Web_files/aplausos.gif" border="0" alt="" title="Aplauso" class="inlineimg"> , como me dijistes lo que le faltaba al script era la sentencia $pdf-&gt;Ln(); antes del While y por eso era que no me mostraba todos los registro de la Tabla.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #ffffff; border-top: 0px">
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #ffffff; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.forosdelweb.com/newreply.php?do=newreply&p=3712873" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/quote.gif" alt="Responder Citando" border="0" title="Responder Citando"></a>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 3712873 popup menu -->
+
+<!-- / post 3712873 popup menu -->
+<script type="text/javascript">vbreport_register("3712873");</script>
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3712873 --><div id="lastpost"></div></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:-3px">
+<tbody><tr valign="top">
+	
+		<td class="smallfont"><a href="http://www.forosdelweb.com/newreply.php?do=newreply&noquote=1&p=3712873" rel="nofollow"><img src="./fpdf con php y mysql - Foros del Web_files/reply.gif" alt="Respuesta" border="0" title="Respuesta"></a></td>
+	
+	
+</tr>
+</tbody></table>
+<!-- / controls below postbits -->
+
+
+
+
+
+
+<!-- thread tags -->
+	<br>
+	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+	<tbody><tr>
+		<td class="thead">
+			
+			<a name="taglist"></a>
+			<a href="http://www.forosdelweb.com/tags/">Etiquetas</a>
+		</td>
+	</tr>
+	<tr>
+		<td class="alt1 smallfont" id="tag_list_cell"><a href="http://www.forosdelweb.com/tags/fpdf.html">fpdf</a>, <a href="http://www.forosdelweb.com/tags/mysql.html">mysql</a>, <a href="http://www.forosdelweb.com/tags/php.html">php</a> <img src="./fpdf con php y mysql - Foros del Web_files/11x11progress.gif" id="tag_form_progress" class="inlineimg" style="display:none" alt=""></td>
+	</tr>
+	</tbody></table>
+
+	<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_ajax_taglist.js"></script>
+		<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_ajax_tagsugg.js"></script>
+<!-- / thread tags -->
+
+
+<!-- thread rate -->
+<div id="fdwvote_877013" class="tborder" style="width: 500px; margin: 0pt auto;display:none" "="">
+	<div id="fdwvote_877013_i" style="padding: 10px" class="alt2">
+		
+		
+	</div>
+</div>  
+
+
+
+
+
+<!-- lightbox scripts -->
+	<script type="text/javascript" src="./fpdf con php y mysql - Foros del Web_files/vbulletin_lightbox.js"></script>
+	<script type="text/javascript">
+	<!--
+	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
+	//-->
+	</script>
+<!-- / lightbox scripts -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- next / previous links -->
+	<br>
+	<div class="smallfont" align="center">
+		<strong>«</strong>
+			<a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013-prev/" rel="nofollow">Tema Anterior</a>
+			|
+			<a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013-next/" rel="nofollow">Próximo Tema</a>
+		<strong>»</strong>
+	</div>
+<!-- / next / previous links -->
+
+
+
+
+
+
+
+<!-- popup menu contents -->
+<br>
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
+<form action="http://www.forosdelweb.com/postings.php?t=877013&pollid=" method="post" name="threadadminform">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Herramientas<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/printer.gif" alt="Mostrar Versión Imprimible" title="Mostrar Versión Imprimible"> <a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013-print/" accesskey="3" rel="nofollow">Mostrar Versión Imprimible</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/sendtofriend.gif" alt="Enviar por Correo" title="Enviar por Correo"> <a href="http://www.forosdelweb.com/sendmessage.php?do=sendtofriend&t=877013" rel="nofollow">Enviar por Correo</a></td>
+	</tr>
+	
+	
+	
+	
+	</tbody></table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- **************************************************** -->
+
+<!-- thread display mode menu -->
+<div class="vbmenu_popup" id="displaymodes_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Desplegado<a name="goto_displaymodes"></a></td>
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option" title="nohilite"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/mode_linear.gif" alt="Modo lineal" title="Modo lineal"> <strong>Modo lineal</strong></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/mode_hybrid.gif" alt="Modo Híbrido" title="Modo Híbrido"> <a rel="nofollow" href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/?mode=hybrid">Cambiar a Modo Hibrido</a></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="./fpdf con php y mysql - Foros del Web_files/mode_threaded.gif" alt="Modo Hilado" title="Modo Hilado"> <a rel="nofollow" href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/?mode=threaded#post3707425">Cambiar a Modo Hilado</a></td>
+	
+	</tr>
+	</tbody></table>
+</div>
+<!-- / thread display mode menu -->
+
+<!-- **************************************************** -->
+
+
+
+
+
+<!-- / popup menu contents -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody><tr valign="bottom">
+	<td width="100%" valign="top">
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="210">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#top" onclick="return toggle_collapse(&#39;forumrules&#39;)"><img id="collapseimg_forumrules" src="./fpdf con php y mysql - Foros del Web_files/collapse_thead.gif" alt="" border="0"></a>
+		Normas de Publicación
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div><strong>No puedes</strong> crear nuevos temas</div>
+		<div><strong>No puedes</strong> responder temas</div>
+		<div><strong>No puedes</strong> subir archivos adjuntos</div>
+		<div><strong>No puedes</strong> editar tus mensajes</div>
+		<hr>
+		
+		<div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=bbcode" target="_blank">BB code</a> está <strong>Activado</strong></div>
+		<div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=showsmilies" target="_blank">Caritas</a> están <strong>Activado</strong></div>
+		<div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> está <strong>Activado</strong></div>
+		<div>Código HTML está <strong>Desactivado</strong></div><div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=linkbacks#trackbacks" target="_blank">Trackbacks</a> está <strong>Desactivado</strong></div>
+<div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=linkbacks#pingbacks" target="_blank">Pingbacks</a> está <strong>Desactivado</strong></div>
+<div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=linkbacks#refbacks" target="_blank">Refbacks</a> está <strong>Desactivado</strong></div>
+		<hr>
+		<div><a rel="nofollow" href="http://www.forosdelweb.com/misc.php?do=showrules" target="_blank">Políticas del foro</a></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tbody><tr>
+			<td>
+			
+			</td>
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+<!-- /forum rules and admin links -->
+
+<br>
+
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+
+<!-- /content area table -->
+<div id="bottom-content">
+
+<br>
+<div class="smallfont" align="center">La zona horaria es GMT -6. Ahora son las 17:01.</div>
+
+<div id="content_footer"><!-- CONTENT FOOTER -->
+	<div id="footer"><!-- FOOTER -->
+
+<a href="http://www.big-boards.com/board/848/">
+<img src="./fpdf con php y mysql - Foros del Web_files/848.png" style="width:6px; height:6px; border:0;" alt="Message Board Statistics" align="left" title="Message Board Statistics">
+</a>
+		<p class="link_footer">
+			<a href="http://www.forosdelweb.com/contacto.php" rel="nofollow" accesskey="9">Contáctenos</a> -
+			
+			
+			<a href="http://www.forosdelweb.com/archive/index.php/">Archivo</a> -
+			<a href="http://www.maestrosdelweb.com/politica-de-privacidad">Política de Privacidad</a> -
+			<a href="http://fdw.li/fdwpoliticas">Políticas de uso</a> -
+			<a href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/#top" onclick="self.scrollTo(0, 0); return false;">Arriba</a>
+		</p>
+		
+		<p class="text_footer">
+			<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+			
+			<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+			
+		</p>
+		<a href="http://www.forosdelweb.com/" class="logo_footer">Foros del Web</a>
+<a href="http://www.maestrosdelweb.com/" class="mdw_footer" title="Un proyecto de Maestros del Web">Un proyecto de Maestros del Web</a>
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es" class="cclogo" title="Licencia de contenidos: Creative Commons BY-NC-SA">Licencia de contenidos: Creative Commons BY-NC-SA</a>
+
+	</div><!-- /FOOTER -->
+</div><!-- /CONTENT FOOTER -->
+<!-- fbconnect --><script type="text/javascript">
+<!--
+	var bburl = 'http://www.forosdelweb.com';
+//-->
+</script>
+<script src="./fpdf con php y mysql - Foros del Web_files/FeatureLoader.js.php" type="text/javascript"></script>
+<script src="./fpdf con php y mysql - Foros del Web_files/fbconnect.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+	// Main Facebook Connect Javascript Initialization
+try{	FB.init("473cb64d324c82815925a4e322c74f0d", "/xd_receiver.htm"); 
+}catch(err){}
+//-->
+</script><!-- / fbconnect -->
+
+
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init(); 
+//-->
+</script>
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+
+<script type="text/javascript">var _gaq=_gaq || [];_gaq.push(['_setAccount','UA-309831-5']);_gaq.push(['_setCustomVar','1', 'usergroup','group1','2']);_gaq.push(['_setCustomVar', '2', 'forum','f18-PHP','3']);_gaq.push(['_setCustomVar', '3', 'vBulletinStage','showthread','3']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';ga.setAttribute('async','true');document.documentElement.firstChild.appendChild(ga);})();</script><noscript>&lt;p&gt;google analytics&lt;/p&gt;</noscript><div style="z-index:3" class="smallfont" id="vbseo"><!-- google_ad_section_start(weight=ignore) -->SEO by <a rel="nofollow" href="http://www.crawlability.com/vbseo/">vBSEO</a> 3.3.2<!-- google_ad_section_end --></div>
+<br><div style="z-index:3" class="smallfont" align="center"><a href="http://www.forosdelweb.com/archive/index.php/f-36.html">1</a> <a href="http://www.forosdelweb.com/archive/index.php/f-91.html">2</a> <a href="http://www.forosdelweb.com/archive/index.php/f-4.html">3</a> <a href="http://www.forosdelweb.com/archive/index.php/f-53.html">4</a> <a href="http://www.forosdelweb.com/archive/index.php/f-95.html">5</a> <a href="http://www.forosdelweb.com/archive/index.php/f-6.html">6</a> <a href="http://www.forosdelweb.com/archive/index.php/f-70.html">7</a> <a href="http://www.forosdelweb.com/archive/index.php/f-63.html">8</a> <a href="http://www.forosdelweb.com/archive/index.php/f-80.html">9</a> <a href="http://www.forosdelweb.com/archive/index.php/f-102.html">10</a> <a href="http://www.forosdelweb.com/archive/index.php/f-106.html">11</a> <a href="http://www.forosdelweb.com/archive/index.php/f-108.html">12</a> <a href="http://www.forosdelweb.com/archive/index.php/f-16.html">13</a> <a href="http://www.forosdelweb.com/archive/index.php/f-113.html">14</a> <a href="http://www.forosdelweb.com/archive/index.php/f-62.html">15</a> <a href="http://www.forosdelweb.com/archive/index.php/f-17.html">16</a> <a href="http://www.forosdelweb.com/archive/index.php/f-85.html">17</a> <a href="http://www.forosdelweb.com/archive/index.php/f-160.html">18</a> <a href="http://www.forosdelweb.com/archive/index.php/f-54.html">19</a> <a href="http://www.forosdelweb.com/archive/index.php/f-118.html">20</a> <a href="http://www.forosdelweb.com/archive/index.php/f-119.html">21</a> <a href="http://www.forosdelweb.com/archive/index.php/f-136.html">22</a> <a href="http://www.forosdelweb.com/archive/index.php/f-121.html">23</a> <a href="http://www.forosdelweb.com/archive/index.php/f-39.html">24</a> <a href="http://www.forosdelweb.com/archive/index.php/f-18.html">25</a> <a href="http://www.forosdelweb.com/archive/index.php/f-142.html">26</a> <a href="http://www.forosdelweb.com/archive/index.php/f-68.html">27</a> <a href="http://www.forosdelweb.com/archive/index.php/f-51.html">28</a> <a href="http://www.forosdelweb.com/archive/index.php/f-78.html">29</a> <a href="http://www.forosdelweb.com/archive/index.php/f-146.html">30</a> <a href="http://www.forosdelweb.com/archive/index.php/f-15.html">31</a> <a href="http://www.forosdelweb.com/archive/index.php/f-13.html">32</a> <a href="http://www.forosdelweb.com/archive/index.php/f-127.html">33</a> <a href="http://www.forosdelweb.com/archive/index.php/f-77.html">34</a> <a href="http://www.forosdelweb.com/archive/index.php/f-105.html">35</a> <a href="http://www.forosdelweb.com/archive/index.php/f-130.html">36</a> <a href="http://www.forosdelweb.com/archive/index.php/f-82.html">37</a> <a href="http://www.forosdelweb.com/archive/index.php/f-10.html">38</a> <a href="http://www.forosdelweb.com/archive/index.php/f-120.html">39</a> <a href="http://www.forosdelweb.com/archive/index.php/f-125.html">40</a> <a href="http://www.forosdelweb.com/archive/index.php/f-83.html">41</a> <a href="http://www.forosdelweb.com/archive/index.php/f-64.html">42</a> <a href="http://www.forosdelweb.com/archive/index.php/f-8.html">43</a> <a href="http://www.forosdelweb.com/archive/index.php/f-148.html">44</a> <a href="http://www.forosdelweb.com/archive/index.php/f-149.html">45</a> <a href="http://www.forosdelweb.com/archive/index.php/f-116.html">46</a> <a href="http://www.forosdelweb.com/archive/index.php/f-3.html">47</a> <a href="http://www.forosdelweb.com/archive/index.php/f-117.html">48</a> <a href="http://www.forosdelweb.com/archive/index.php/f-26.html">49</a> <a href="http://www.forosdelweb.com/archive/index.php/f-84.html">50</a> <a href="http://www.forosdelweb.com/archive/index.php/f-19.html">51</a> <a href="http://www.forosdelweb.com/archive/index.php/f-92.html">52</a> <a href="http://www.forosdelweb.com/archive/index.php/f-75.html">53</a> <a href="http://www.forosdelweb.com/archive/index.php/f-93.html">54</a> <a href="http://www.forosdelweb.com/archive/index.php/f-57.html">55</a> <a href="http://www.forosdelweb.com/archive/index.php/f-58.html">56</a> <a href="http://www.forosdelweb.com/archive/index.php/f-59.html">57</a> <a href="http://www.forosdelweb.com/archive/index.php/f-145.html">58</a> <a href="http://www.forosdelweb.com/archive/index.php/f-154.html">59</a> <a href="http://www.forosdelweb.com/archive/index.php/f-29.html">60</a> <a href="http://www.forosdelweb.com/archive/index.php/f-147.html">61</a> <a href="http://www.forosdelweb.com/archive/index.php/f-79.html">62</a> <a href="http://www.forosdelweb.com/archive/index.php/f-45.html">63</a> <a href="http://www.forosdelweb.com/archive/index.php/f-67.html">64</a> <a href="http://www.forosdelweb.com/archive/index.php/f-96.html">65</a> <a href="http://www.forosdelweb.com/archive/index.php/f-30.html">66</a> <a href="http://www.forosdelweb.com/archive/index.php/f-166.html">67</a> <a href="http://www.forosdelweb.com/archive/index.php/f-165.html">68</a> <a href="http://www.forosdelweb.com/archive/index.php/f-167.html">69</a> <a href="http://www.forosdelweb.com/archive/index.php/f-14.html">70</a> <a href="http://www.forosdelweb.com/archive/index.php/f-50.html">71</a> <a href="http://www.forosdelweb.com/archive/index.php/f-12.html">72</a> <a href="http://www.forosdelweb.com/archive/index.php/f-69.html">73</a> <a href="http://www.forosdelweb.com/archive/index.php/f-43.html">74</a> <a href="http://www.forosdelweb.com/archive/index.php/f-129.html">75</a> <a href="http://www.forosdelweb.com/archive/index.php/f-86.html">76</a> <a href="http://www.forosdelweb.com/archive/index.php/f-87.html">77</a> <a href="http://www.forosdelweb.com/archive/index.php/f-99.html">78</a> <a href="http://www.forosdelweb.com/archive/index.php/f-100.html">79</a> <a href="http://www.forosdelweb.com/archive/index.php/f-21.html">80</a> <a href="http://www.forosdelweb.com/archive/index.php/f-38.html">81</a> <a href="http://www.forosdelweb.com/archive/index.php/f-27.html">82</a> <a href="http://www.forosdelweb.com/archive/index.php/f-41.html">83</a> <a href="http://www.forosdelweb.com/archive/index.php/f-153.html">84</a> <a href="http://www.forosdelweb.com/archive/index.php/f-42.html">85</a> <a href="http://www.forosdelweb.com/archive/index.php/f-56.html">86</a> <a href="http://www.forosdelweb.com/archive/index.php/f-23.html">87</a> <a href="http://www.forosdelweb.com/archive/index.php/f-90.html">88</a> <a href="http://www.forosdelweb.com/archive/index.php/f-11.html">89</a> <a href="http://www.forosdelweb.com/archive/index.php/f-128.html">90</a> <a href="http://www.forosdelweb.com/archive/index.php/f-52.html">91</a> <a href="http://www.forosdelweb.com/archive/index.php/f-20.html">92</a> <a href="http://www.forosdelweb.com/archive/index.php/f-89.html">93</a> <a href="http://www.forosdelweb.com/archive/index.php/f-88.html">94</a> <a href="http://www.forosdelweb.com/archive/index.php/f-98.html">95</a> <a href="http://www.forosdelweb.com/archive/index.php/f-66.html">96</a> <a href="http://www.forosdelweb.com/archive/index.php/f-162.html">97</a> <a href="http://www.forosdelweb.com/archive/index.php/f-65.html">98</a> <a href="http://www.forosdelweb.com/archive/index.php/f-143.html">99</a> <a href="http://www.forosdelweb.com/archive/index.php/f-112.html">100</a> <a href="http://www.forosdelweb.com/archive/index.php/f-164.html">101</a> <a href="http://www.forosdelweb.com/archive/index.php/f-155.html">102</a> <a href="http://www.forosdelweb.com/archive/index.php/f-122.html">103</a> <a href="http://www.forosdelweb.com/archive/index.php/f-37.html">104</a> <a href="http://www.forosdelweb.com/archive/index.php/f-60.html">105</a> <a href="http://www.forosdelweb.com/archive/index.php/f-2.html">106</a> <a href="http://www.forosdelweb.com/archive/index.php/f-25.html">107</a> <a href="http://www.forosdelweb.com/archive/index.php/f-97.html">108</a> <a href="http://www.forosdelweb.com/archive/index.php/f-157.html">109</a> <a href="http://www.forosdelweb.com/archive/index.php/f-74.html">110</a> <a href="http://www.forosdelweb.com/archive/index.php/f-40.html">111</a> </div>
+
+<script type="text/javascript">
+
+window.orig_onload = window.onload;
+window.onload = function() {
+var cpost=document.location.hash;if(cpost){ if(cobj = fetch_object(cpost.substring(1,cpost.length)))cobj.scrollIntoView(true);else {cpostno = cpost.substring(5,cpost.length);if(parseInt(cpostno)>0 && (cpost.substring(1,5)=='post')){location.replace('http://www.forosdelweb.com/showthread.php?p='+cpostno);};} }
+
+if(typeof window.orig_onload == "function") window.orig_onload();
+}
+
+</script>
+
+
+</div><div id="FB_HiddenContainer" style="position: absolute; top: -10000px; width: 0px; height: 0px; "><div><iframe name="loginStatus" src="./fpdf con php y mysql - Foros del Web_files/login_status.htm" class="FB_SERVER_IFRAME" scrolling="no" frameborder="0"></iframe></div><div><embed width="1" height="1" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/flashplayer" allowscriptaccess="always" name="flashXdComm" id="flashXdComm" bgcolor="#869ca7" quality="high" src="http://static.ak.fbcdn.net/rsrc.php/v1/yF/r/Y7YCBKX-HZn.swf"></div></div></body><span id="skype_highlighting_settings" display="none" autoextractnumbers="1"></span><object id="skype_plugin_object" location.href="http://www.forosdelweb.com/f18/fpdf-con-php-mysql-877013/" location.hostname="www.forosdelweb.com" style="position: absolute; visibility: hidden; left: -100px; top: -100px; " width="0" height="0" type="application/x-vnd.skype.toolbars.npplugin.4.2.0"></object></html>

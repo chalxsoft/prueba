@@ -1,0 +1,155 @@
+BODY {
+	position:absolute;
+	width:780px;margin-left:-390px;left:50%;
+	background-color:#fff;
+	border-top:0px;
+	margin-top:0px;
+	font-family:Arial; font-size:12px;
+}
+
+.body_left {width:150px;background-color:#C9D6F5;}
+.body_center {width:510px;background-color:#fff;padding:3px;}
+.body_centerLarge {width:630px;background-color:#fff;padding:3px;}
+.body_right {width:120px;background-color:#C9D6F5;}
+
+.breadcrumbs {
+	font-size:13px;
+	color:#fff;
+	font-weight:bold;
+	padding-left:4px;
+}
+.breadcrumbsL:link, .breadcrumbsL:visited, .breadcrumbsL:hover {
+	font-size:13px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.list_title {
+	background-color:#91a0a7;
+	text-align:right;
+	font-weight:bold;
+	font-size:12px;
+	color:#fff;
+	padding-right:5px;
+	padding-left:10px;
+}
+.list_content {
+	background-color:#e3e9ec;
+	font-size:12px;
+	color:#000;
+	padding-left:5px;
+}
+.list_contentBold {
+	background-color:#e3e9ec;
+	font-size:12px;
+	color:#000;
+	padding-left:5px;
+	font-weight:bold;
+}
+
+.list_description {
+	background-color:#f2f5f7;
+	font-size:12px;
+	padding:2px;
+}
+/* pie para el listado de cursos, temas, noticias, etc.. */
+.list_footer {
+	clear:both;
+	background-color:#e3e9ec;
+	color:#91a0a7;
+	padding-left:5px;
+}
+/* los comentarios que ponemos en la parte superior del listado... */
+.list_comment {text-align:center;font-weight:bold;}
+
+/* Contiene la linea inferior del titulo H1 */
+.headerH1 {margin-top:10px;}
+.lineH1 {background-color:#5B62A0; border-bottom:1px solid;margin:5px 0px 5px 0px;}
+
+.header_date {
+	text-align:right;
+	background-color:#00004a;
+	font-size:12px;
+	color:#fff;
+	padding-right:5px;
+}
+
+/* paginacion */
+.page {clear:both;display:table;background-color:#5B62A0;color:#fff;width:100%;text-align:center;}
+.pageTopLeft {float:left;padding:1px 0px 1px 5px;}
+.pageTopRight {float:right;padding:1px 0px 1px 5px;}
+/* Enlaces de paginacion activos*/
+.pageOk {color:#fff;padding-left:2px;padding-right:2px;}
+/* Enlaces de paginacion desactivados */
+.pageKo {color:#c0c0c0;padding-left:2px;padding-right:2px;}
+.pageSelect {color:#000;font-weight:bold;}
+
+.banners_centro {float:right;margin-bottom:10px;}
+
+/* Comentarios */
+.comment {clear:both;padding-top:10px;}
+.comment_header {display:table;width:100%;background-color:#e6d2d5;border-bottom:1px solid #fff;}
+.comment_content {display:table;width:100%;background-color:#f2f5f7;}
+.comment_date {float:left;padding:3px;}
+.comment_name {float:left;padding:3px;font-weight:bold;}
+.comment_mail {float:left;padding:3px;}
+.comment_image {float:right;padding:3px;}
+.comment_description {padding:3px;}
+
+/* estilo que se utiliza para remarcar las visitas */
+.markVisits {font-weight:bold;}
+/* estilo que se utiliza para remarcar las votaciones */
+.markVote {font-weight:bold;}
+
+/* headerList */
+.headerList_search {float:left;padding-bottom:2px;}
+.headerList_searchButton {padding-left:5px;height:100%;vertical-align:bottom;}
+.headerList_return {float:right;padding-top:3px;}
+
+.errorForm {text-align:center;color:#f00;font-weight:bold;}
+.errorFormLeft {text-align:left;color:#f00;font-weight:bold;}
+.messageForm {text-align:center;font-weight:bold;}
+
+.form {clear:both;border:1px solid #C9D6F5;padding:10px;background-color:#f2f5f7;margin:0 auto 0 auto;margin-top:3px;color:#494965;}
+.formularioTitle {text-align:right;}
+.formularioComment {text-align:justify;color:#808080;padding-top:10px;}
+
+.homeTitleBlock {background-color:#808080;border:0px;padding:0px;margin:0px 0px 2px 0px;width:100%;}
+.homeTitleBlockSeparation {margin-top:8px;}
+.homeTitle {padding:0px;border:0px;color:#fff;width:100%;text-align:center;font-weight:bold;}
+.homeContentBlock {background-color:#f2f5f7;border:0px;padding:0px;margin:0px;width:100%;text-align:justify;}
+.homeContentInfo {padding:2px;border:1px #808080 solid;background-color:#f4eced;width:100%;}
+.homeContentInfoInclude {font-size:10px;text-align:left;}
+.homeTitleBlockImg {padding-right:3px;}
+
+/* Cabecera para el listado de los cursos, noticias, etc... */
+.headerListSections {clear:both;background-color:#c0c0c0;text-align:center;font-weight:bold;padding:1px;margin-top:10px;}
+
+/* estilo con el que se muestra el textarea con el codigo fuente para copiar */
+.formulariocf {border:1px #808080 solid;font-size:12px;
+overflow: auto;
+overflow-y: auto;
+overflow-x: auto;
+}
+
+.news_title {font-family: Arial; font-size: 15px;padding-bottom:4px;}
+.news_image {margin:0px 5px 5px 0px;padding:1px;border:1px #d9d9d9 solid;}
+/* Mostramos el numero de comentarios que dispone cada curso, tema, etc... */
+.list_comments {padding-left:3px;padding-top:2px;}
+.list_comments_d {color:#c9c9c9;}
+
+.forosListUser {float:left;color:#91a0a7;padding-left:5px;}
+.forosListNumberView {float:right;color:#91a0a7;}
+.forosLine {margin-bottom:5px;margin-top:5px;border-top:1px dotted #808080;}
+.forosList {clear:both;display:table;width:100%;padding:1px 1px 1px 1px;}
+.forosListRow {display:table;width:100%;margin-top:5px;}
+.forosBtnComment {clear:both;float:right;padding:0px 5px 0px 0px;}
+.forosForm {clear:both;display:table;width:98%;margin:0 auto 0 auto;}
+.forosDetailBox {clear:both;margin-top:2px;border:1px solid #808080;padding:2px;}
+.forosMessage {display:table;width:100%;clear:both;border:1px dotted #d9d9d9;margin-top:15px;padding-bottom:5px;}
+
+.iconSelect {padding:2px;border:1px solid #5B62A0;}
+.iconUnselect {padding:3px;}
+
+.noRowsDataBase {clear:both;text-align:center;}

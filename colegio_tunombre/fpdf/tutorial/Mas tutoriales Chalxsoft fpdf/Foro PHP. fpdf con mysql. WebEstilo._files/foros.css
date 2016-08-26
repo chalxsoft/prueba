@@ -1,0 +1,27 @@
+.headers
+{
+	 font: bold 10pt Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFF0;
+	background-color : #003399;
+}
+.items
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color : #D1D7E0;
+}
+.mensaje
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-indent : 0em;
+	text-align : justify;
+}
+
+h3.foros
+{ 
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif; 
+	color: #8A6613;
+	display: inline;
+}

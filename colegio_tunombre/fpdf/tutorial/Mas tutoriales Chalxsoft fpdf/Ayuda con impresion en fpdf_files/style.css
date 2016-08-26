@@ -1,0 +1,64 @@
+A:link, A:visited { text-decoration: none }
+A:hover {color:#000080}
+.titleWeb {color:#00004a;font-weight:bold;text-align:center;font-size:14px;}
+.link1 {color:#0000ff}
+.link1:hover {color:#0000a0}
+.link2 {text-decoration: underline; color:#0000ff}
+.link2:link {text-decoration: underline}
+.link2:visited {text-decoration: underline; color:#0000ff}
+.link2:hover {text-decoration: underline; color:#0000a0}
+.link3 {text-decoration: underline; color:#0000ff}
+.link3:link {text-decoration: underline}
+.link3:visited {text-decoration: underline; color:#0000a0}
+.link3:hover {text-decoration: underline; color:#0000a0}
+.formulario {font-family: Arial; font-size: 12px; font-weight: normal; color: #000066; background-color: #ffffff; border:1px solid #C9D6F5;}
+.formulario_disabled {font-family: Arial; font-size: 12px; font-weight: normal; color: #818181; background-color: #ffffff;}
+.formulario:focus {background-color: #ffffea;}
+.btn1 {
+	display:block; BORDER-RIGHT: 1px outset; PADDING-RIGHT: 9px; BORDER-TOP: 1px outset; PADDING-LEFT: 9px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; BORDER-LEFT: 1px outset; COLOR: blue; PADDING-TOP: 0px; BORDER-BOTTOM: 1px outset; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #ffffd2; TEXT-ALIGN: center;
+}
+.btn1:hover {
+	display:block; BORDER-RIGHT: #ead5bb 1px solid; PADDING-RIGHT: 9px; BORDER-TOP: #ead5bb 1px solid; PADDING-LEFT: 9px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; BORDER-LEFT: #ead5bb 1px solid; COLOR: blue; PADDING-TOP: 0px; BORDER-BOTTOM: #ead5bb 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+
+H1 {display:inline;font-family: Arial; font-size: 16px;}
+H2 {display:inline;font-family: Arial; font-size: 15px;}
+H3 {display:inline;font-family: Arial; font-size: 14px;}
+TD {font-family:Arial; font-size:12px;}
+
+.menu {
+	padding-top:5px;
+	padding-bottom:2px;
+	font-family:Arial;
+	font-size:12px;
+}
+.menu_link {
+	/* Eliminamos las marcas que genera el li como pueden ser las redonadas o recuadros */
+	list-style-type: none;
+	font-weight:bold;
+	margin:0px 2px 0px 2px;
+	padding:1px 2px 1px 3px;
+	display: block;
+	/* En cada enlace pintamos la linea inferior */
+	border-bottom: 1px solid #fff;
+}
+.menu_link_last {
+	/* Eliminamos las marcas que genera el li como pueden ser las redonadas o recuadros */
+	list-style-type: none;
+	font-weight:bold;
+	margin:0px 2px 0px 2px;
+	padding:1px 2px 1px 3px;
+	display: block;
+}
+.menu_title {
+	background-color:#5B62A0;
+	font-size:12px;
+	color:#fff;
+	padding:3px 3px 3px 5px;
+	font-weight:bold;
+}
+
+.publi_text {display:block; border:1px solid #e0df72; padding:1px 9px 1px 9px; color: blue; background-color:#ffffd2; text-align: center; font-family:Arial; font-size:12px;}
+
+/* Pie de la pagina */
+.footer {margin-top:5px;padding-top:5px;border-top:1px solid #5B62A0;text-align:center;font-size:12px;width:780px;}

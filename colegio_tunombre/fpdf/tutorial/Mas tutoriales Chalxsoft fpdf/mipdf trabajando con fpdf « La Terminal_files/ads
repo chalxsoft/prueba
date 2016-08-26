@@ -1,0 +1,65 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BiBo5aLV2TemtENC1sQfpucSPCM6L39sB5vbgwxTAjbcB0OgMEAEYASCk7p8GKAQ4AFDl_fPuAWCr-eSBuAagAerKmvsDsgEYbGF0ZXJtaW5hbC53b3JkcHJlc3MuY29tugEKMzM2eDI4MF9qc8gBAdoBRWh0dHA6Ly9sYXRlcm1pbmFsLndvcmRwcmVzcy5jb20vMjAwNy8wNS8xOC9taXBkZi10cmFiYWphbmRvLWNvbi1mcGRmL4ACAagDAegD3QXoA9cC9QMKAADE&amp;num=1&amp;sig=AGiWqtwChijigarwNa1f6Gf80YfyWdPWow&amp;client=ca-pub-3443918307802676&amp;adurl=http://www.modelright.com"; 
+google_ad.visible_url = "www.modelright.com/"; 
+google_ad.line1 = "SQL Database Designer"; 
+google_ad.line2 = "Design, visualize, document and"; 
+google_ad.line3 = "reverse engineer any database."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BarkmaLV2TemtENC1sQfpucSPCJOeseMB84HPgx3AjbcB0IdWEAIYAiCk7p8GKAQ4AFC1i_S4BmCr-eSBuAayARhsYXRlcm1pbmFsLndvcmRwcmVzcy5jb226AQozMzZ4MjgwX2pzyAEB2gFFaHR0cDovL2xhdGVybWluYWwud29yZHByZXNzLmNvbS8yMDA3LzA1LzE4L21pcGRmLXRyYWJhamFuZG8tY29uLWZwZGYvgAIBqQJnTXkYg8VuPqgDAegD3QXoA9cC9QMKAADE&amp;num=2&amp;sig=AGiWqtwa-Wyi3mUXTOmnFBBYmue8PtGZdQ&amp;client=ca-pub-3443918307802676&amp;adurl=http://www.summary.plda.net"; 
+google_ad.visible_url = "www.summary.plda.net"; 
+google_ad.line1 = "PDF Summary"; 
+google_ad.line2 = "Get quick overview"; 
+google_ad.line3 = "of your PDF files"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BPbFZaLV2TemtENC1sQfpucSPCOLbyJQC6uKqsR7AjbcBwKkHEAMYAyCk7p8GKAQ4AFCG3ey0B2Cr-eSBuAayARhsYXRlcm1pbmFsLndvcmRwcmVzcy5jb226AQozMzZ4MjgwX2pzyAEB2gFFaHR0cDovL2xhdGVybWluYWwud29yZHByZXNzLmNvbS8yMDA3LzA1LzE4L21pcGRmLXRyYWJhamFuZG8tY29uLWZwZGYvqQJbKRqgula3PqgDAegD3QXoA9cC9QMKAADE&amp;num=3&amp;sig=AGiWqtys6CEvIUClc0yjTsCM_ARB2FVi-g&amp;client=ca-pub-3443918307802676&amp;adurl=http://www.leanservers.com"; 
+google_ad.visible_url = "www.leanservers.com"; 
+google_ad.line1 = "Leanservers NGINX hosting"; 
+google_ad.line2 = "Leanservers NGINX based hosting"; 
+google_ad.line3 = "Cheap, fast, rock-solid technology"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 4; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=Bc9BqaLV2TemtENC1sQfpucSPCMHUif4BqYabjReRgemsBqD-ChAEGAQgpO6fBigEOABQrNaY4vj_____AWCr-eSBuAagAZyEkv8DsgEYbGF0ZXJtaW5hbC53b3JkcHJlc3MuY29tugEKMzM2eDI4MF9qc8gBAdoBRWh0dHA6Ly9sYXRlcm1pbmFsLndvcmRwcmVzcy5jb20vMjAwNy8wNS8xOC9taXBkZi10cmFiYWphbmRvLWNvbi1mcGRmL4ACAagDAegD3QXoA9cC9QMKAADE&amp;num=4&amp;sig=AGiWqtzN-Ss1iMWJmwQNcBvAKpSMwMvgYA&amp;client=ca-pub-3443918307802676&amp;adurl=http://www.fusioncharts.com/PHP/%3Fbs%3Dadwords_fc-pc_php-ch_txt_pc"; 
+google_ad.visible_url = "www.FusionCharts.com/PHP"; 
+google_ad.line1 = "Need Charts For PHP?"; 
+google_ad.line2 = "Get Running In Minutes. 75+ Charts"; 
+google_ad.line3 = "For Only $399. Download Now."; 
+google_ad.regionname = ""; 
+google_ads[3] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://laterminal.wordpress.com/2007/05/18/mipdf-trabajando-con-fpdf/%26hl%3Des%26client%3Dca-pub-3443918307802676%26adU%3Dwww.modelright.com/%26adT%3DSQL%2BDatabase%2BDesigner%26adU%3Dwww.summary.plda.net%26adT%3DPDF%2BSummary%26adU%3Dwww.leanservers.com%26adT%3DLeanservers%2BNGINX%2Bhosting%26adU%3Dwww.FusionCharts.com/PHP%26adT%3DNeed%2BCharts%2BFor%2BPHP%253F%26gl%3DCO\x26usg\x3dAFQjCNHs6LK3z2uljKSE1YgdCnYzAGOr3g";
+var google_attribution_text = "Anuncios Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}
